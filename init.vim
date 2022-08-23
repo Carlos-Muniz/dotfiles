@@ -40,7 +40,7 @@ au FileType gitcommit let b:EditorConfig_disable = 1
 
 " colorscheme
 colorscheme kalisi
-set background=light
+set background=dark
 
 " 256 color support
 set t_Co=256
@@ -51,9 +51,10 @@ autocmd BufWritePre *.py execute ':Isort'
 set number
 set ruler
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set textwidth=78
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set fileformat=unix
 
 " nmap <C-n> :NERDTreeFind<CR>
 " nmap <C-l> :FZF<CR>
