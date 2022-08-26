@@ -1,0 +1,48 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[user]
+	email = cmuniz@tcril.org
+	name = Carlos Muniz
+
+[core]
+    editor = nvim
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+
+[add.interactive]
+    useBuiltin = false # required for git 2.37.0
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    line-numbers = true
+    light = false
+    features = decorations
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[init]
+    defaultBranch = main

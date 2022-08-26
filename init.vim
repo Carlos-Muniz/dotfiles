@@ -1,7 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'davidhalter/jedi-vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -12,7 +12,7 @@ Plug 'freeo/vim-kalisi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'elmcast/elm-vim'
 Plug 'psf/black'
-Plug 'fisadev/vim-isort'
+" Plug 'fisadev/vim-isort'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
